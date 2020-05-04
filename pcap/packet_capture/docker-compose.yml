@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+    analyse:
+        build:
+            context: .
+        container_name: packetAnalyse-app
+        ports:
+            - 5000:5000
+        networks:
+            - vnet
+
+networks:
+    vnet:

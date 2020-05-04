@@ -1,0 +1,11 @@
+FROM node:14
+
+WORKDIR /app
+COPY package.json ./
+COPY .env ./
+COPY src/ ./
+
+RUN npm install --only=production
+
+EXPOSE 5000
+CMD ["node", "src/analyse_packets.js"]
