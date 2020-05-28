@@ -1,0 +1,3 @@
+man 7 pcap-filter
+
+node_pcap(X.X.X.X, {filter: "gateway [localhost]"}) pour selectionner les packets passants par le containeur, à tester
